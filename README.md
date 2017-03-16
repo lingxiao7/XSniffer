@@ -1,2 +1,6 @@
-# XSniffer
-XSniffer. A simple packet analyzer computer software.
+Overview
+========
+
+``XSniffer`` is A simple packet analyzer computer software using WinPcap.
+
+.. _WinPcap: https://www.winpcap.org
