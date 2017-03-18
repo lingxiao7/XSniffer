@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Dialog">
+      <UniqueIdentifier>{dfe95cea-3c98-4b4e-8b09-e8c04fe7ef2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Dialog">
+      <UniqueIdentifier>{8d4a081f-9c7f-4247-b90f-9fb45b3f790f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ThreadEx">
+      <UniqueIdentifier>{a2387e48-2241-4325-9205-5650afd6ca36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ThreadEx">
+      <UniqueIdentifier>{a4cf31f8-f571-4bdc-9bb2-91da8ac3864e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\HexEdit">
+      <UniqueIdentifier>{8a2df84e-e37d-49d4-8b1e-334e6e398c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\HexEdit">
+      <UniqueIdentifier>{5b3d9fd6-ccf7-483e-8108-136efa9dd2c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XSniffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptersDlg.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CapfilterDlg.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="XSnifferDlg.h">
+      <Filter>头文件\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="HexEdit.h">
+      <Filter>头文件\HexEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadEx.h">
+      <Filter>头文件\ThreadEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocols.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowThread.h">
+      <Filter>头文件\ThreadEx</Filter>
+    </ClInclude>
+    <ClInclude Include="CapThread.h">
+      <Filter>头文件\ThreadEx</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="XSniffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XSnifferDlg.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CapfilterDlg.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptersDlg.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="HexEdit.cpp">
+      <Filter>源文件\HexEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadEx.cpp">
+      <Filter>源文件\ThreadEx</Filter>
+    </ClCompile>
+    <ClCompile Include="CapThread.cpp">
+      <Filter>源文件\ThreadEx</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowThread.cpp">
+      <Filter>源文件\ThreadEx</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalVar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocols.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XSniffer.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\XSniffer.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\XSniffer.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
