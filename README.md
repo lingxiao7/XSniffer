@@ -1,21 +1,20 @@
-#XSniffer
+# XSniffer
 
 ``XSniffer`` is a simple packet analyzer computer software using [WinPcap](https://www.winpcap.org) based on MFC DIALOG. 
 
-[TOC]
 
-##Dialog
+## Dialog
 
 ``XSniffer`` is a MFC DIALOG BASED Program. So there's three dialogs.
 
-###XSniffer Dialog
+### XSniffer Dialog
 
 The main dialog. 
-###CaptureFilter Dialog
+### CaptureFilter Dialog
 
 To set filter using capture filter protocol.
 
-####CaptureFilter
+#### CaptureFilter
 
 | Protocol | bSrcIp | dwSrcIp | bDstIp | dwDstIp | bSrcPort | dwSrcPort | bDstPort | dwDstPort |
 | ----- |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|-----:|
@@ -45,7 +44,7 @@ struct CaptureFilter
 >| 10 | 8 | 4 | 2 | 1 |
 
 
-###Adapters Dialog
+### Adapters Dialog
 
 Double click to select adapture.
 
@@ -54,9 +53,9 @@ Double click to select adapture.
 3. Double click to set adapture in XSniffer.
 
 
-##Threads
+## Threads
 
-###ShowThread on ListView
+### ShowThread on ListView
 
 The key task of this thread is add list view item using the global packets vector and show item.
 
@@ -67,7 +66,7 @@ The column header of the list view is that:
 
 The thread will convert the packets' data to format as correct column header. Refer to the protocol format(also see Protocal.h in project), the task is't difficult. 
 
-###Capture Packets
+### Capture Packets
 
 The key task is open the adapture and set filter to store packets to he global packets vector.
 
@@ -77,9 +76,9 @@ The key task is open the adapture and set filter to store packets to he global p
 4. Pcap_next.
 5. Free the device list.
 
-##Protocal Format
+## Protocal Format
 
-###Ethernet
+### Ethernet
 
 ```C++
 /*                                         Ethernet_II
@@ -92,7 +91,7 @@ The key task is open the adapture and set filter to store packets to he global p
 
 See also https://en.wikipedia.org/wiki/Ethernet
 
-###ARP
+### ARP
 
 ```C++
 /*     Internet Protocol(IPv4) over Ethernet ARP packet
@@ -112,7 +111,7 @@ See also https://en.wikipedia.org/wiki/Ethernet
 
 See also https://en.wikipedia.org/wiki/Address_Resolution_Protocol
 
-###IP
+### IP
 
 ```C++
 /*               IPv4 Header Format
@@ -131,7 +130,7 @@ See also https://en.wikipedia.org/wiki/Address_Resolution_Protocol
 
 See also https://en.wikipedia.org/wiki/Internet_Protocol.
 
-###TCP
+### TCP
 
 ```C++
 /*                                                         TCP Header
@@ -152,7 +151,7 @@ See also https://en.wikipedia.org/wiki/Internet_Protocol.
 
 See also https://en.wikipedia.org/wiki/Transmission_Control_Protocol.
 
-###UDP
+### UDP
 
 ```C++
 /*                 UDP Header
@@ -167,7 +166,7 @@ See also https://en.wikipedia.org/wiki/Transmission_Control_Protocol.
 
 See also https://en.wikipedia.org/wiki/User_Datagram_Protocol.
 
-###ICMP
+### ICMP
 
 ```C++
 /*                ICMP Header
@@ -181,7 +180,7 @@ See also https://en.wikipedia.org/wiki/User_Datagram_Protocol.
 
 See also https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol.
 
-###IGMP
+### IGMP
 
 ```C++
 /*                IGMP Header
