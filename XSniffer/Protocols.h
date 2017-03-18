@@ -185,6 +185,7 @@ typedef struct IcmpHeader
 | Octet | Bit |---------------------------------------|
 |   0   |  0  |   Type  |  Code  |   Header checksum  |
 |-----------------------------------------------------|
+*/
 /* IGMP Header Struct */
 typedef struct IgmpHeader
 {

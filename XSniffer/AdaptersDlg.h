@@ -1,6 +1,7 @@
 #pragma once
 #include "afxwin.h"
 #include "XSnifferDlg.h"
+#include "pcap.h"
 
 class CXSnifferDlg;
 

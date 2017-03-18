@@ -106,4 +106,10 @@ public:
 	afx_msg void OnOptStartcap();
 	afx_msg void OnOptStopcap();
 	afx_msg void OnFileClose();
+	afx_msg void OnClickListPackets(NMHDR *pNMHDR, LRESULT *pResult);
+	afx_msg void OnSelchangedTreePackets(NMHDR *pNMHDR, LRESULT *pResult);
+	afx_msg void OnDeleteitemTreePackets(NMHDR *pNMHDR, LRESULT *pResult);
+
+	// 更新TreeView数据
+	void UpdateTreeViewData(DWORD dwIndex);
 };

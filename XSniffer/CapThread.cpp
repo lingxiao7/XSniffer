@@ -116,8 +116,6 @@ BOOL CCapThread::InitInstance()
 		m_ulMask = 0x00FFFFFF;
 	}
 
-
-
 	// ±àÒë¹ıÂËÆ÷
 	struct bpf_program fcode;
 	if (pcap_compile(m_pDevHandle, &fcode, m_szFilter, 1, m_ulMask) < 0)
@@ -135,7 +133,7 @@ BOOL CCapThread::InitInstance()
 		return FALSE;
 	}
 
-	return 0;
+	return CThreadEx::InitInstance();
 }
 
 int CCapThread::ExitInstance()
