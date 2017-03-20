@@ -165,5 +165,10 @@ int CCapThread::Run()
 			break;
 		}
 	}
+
+
+	// 关闭打开的网络适配器
+	pcap_close(m_pDevHandle);
+	m_bThreadRolling = false;
 	return 0;
 }
