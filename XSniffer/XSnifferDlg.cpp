@@ -140,7 +140,7 @@ BOOL CXSnifferDlg::OnInitDialog()
 	g_vcPackets.reserve(10 * 1024 * 1024);
 
 	// 初始数据包统计
-	m_dwArp = m_dwIcmp = m_dwIgmp = m_dwRef = m_dwTcp = 0;
+	m_dwUdp = m_dwArp = m_dwIcmp = m_dwIgmp = m_dwRef = m_dwTcp = 0;
 
 	// 初始显示线程
 	SAFE_DELETE(m_tShowThread);
